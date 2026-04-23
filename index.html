@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>토달볶 (to-dal-bokk)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="game"></canvas>
+    <div id="admin-panel" class="hidden">
+        <div class="admin-header">Admin</div>
+        <label>불뿜기 Range: <span id="val-fire-range"></span>
+            <input type="range" id="slider-fire-range" min="50" max="400" step="5">
+        </label>
+        <label>불뿜기 Spread: <span id="val-fire-spread"></span>
+            <input type="range" id="slider-fire-spread" min="30" max="180" step="5">
+        </label>
+        <label>바람 Range: <span id="val-wind-range"></span>
+            <input type="range" id="slider-wind-range" min="50" max="500" step="5">
+        </label>
+        <label>바람 Spread: <span id="val-wind-spread"></span>
+            <input type="range" id="slider-wind-spread" min="30" max="180" step="5">
+        </label>
+        <label>꼬리 Range: <span id="val-tail-range"></span>
+            <input type="range" id="slider-tail-range" min="30" max="200" step="5">
+        </label>
+        <label>꼬리 Arc: <span id="val-tail-arc"></span>
+            <input type="range" id="slider-tail-arc" min="90" max="360" step="5">
+        </label>
+    </div>
+    <button id="admin-toggle">Admin</button>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
